@@ -4,7 +4,7 @@ tags:
 title: 跨平台的开源 BitTorrent 客户端
 description: 跨平台的开源 BitTorrent 客户端
 additionalProperties:
-    key: qBittorrentee
+    key: qbittorrentee
     name: qBittorrentee
     tags:
         - Tool
