@@ -13,9 +13,9 @@ services:
       - WEBUI_PORT=${PANEL_APP_PORT_HTTP}
       - TORRENTING_PORT=${PANEL_TORRENTING_PORT}
     ports:
-      - ${PANEL_TORRENTING_PORT}:6881
-      - ${PANEL_TORRENTING_PORT}:6881/udp
-      - ${PANEL_APP_PORT_HTTP}:8080
+      - ${PANEL_TORRENTING_PORT}:${PANEL_TORRENTING_PORT}
+      - ${PANEL_TORRENTING_PORT}:${PANEL_TORRENTING_PORT}/udp
+      - ${PANEL_APP_PORT_HTTP}:${PANEL_APP_PORT_HTTP}
     volumes:
       - ./config:/config
       - ./data:/downloads
