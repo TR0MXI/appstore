@@ -1,0 +1,19 @@
+name: Mayfly-go
+tags:
+    - 实用工具
+title: 多数据库一站式管理工具
+description: web版数据库统一管理操作平台
+additionalProperties:
+    key: mayfly
+    name: mayfly
+    tags:
+        - Tool
+    shortDescZh: web版数据库统一管理操作平台
+    shortDescEn: Unified database management operation platform for the web version
+    type: tool
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 12
+    website: https://alist.nn.ci/
+    github: https://github.com/dromara/mayfly-go
+    document: https://www.yuque.com/may-fly/mayfly-go
