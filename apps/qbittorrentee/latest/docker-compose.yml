@@ -6,8 +6,8 @@ services:
     networks:
       - 1panel-network
     environment:
-      - PUID=1026
-      - PGID=100
+      - PUID=0
+      - PGID=0
       - UMASK_SET=022
       - TZ=${TIME_ZONE}
       - WEBUI_PORT=${PANEL_APP_PORT_HTTP}
