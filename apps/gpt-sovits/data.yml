@@ -1,8 +1,8 @@
 name: gpt-sovits
 tags:
-    - 实用工具
-title: 跨平台的开源 BitTorrent 客户端
-description: 跨平台的开源 BitTorrent 客户端
+    - ai
+title: 高效的TTS训练推理工具
+description: 高效的TTS训练推理工具
 additionalProperties:
     key: gpt-sovits
     name: gpt-sovits
