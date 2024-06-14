@@ -13,10 +13,11 @@ services:
         - LANG=zh_CN.UTF-8
         - LC_ALL=zh_CN.UTF-8
     volumes:
-      - ./output:/workspace/output
-      - ./logs:/workspace/logs
-      - ./SoVITS_weights:/workspace/SoVITS_weights
-      - ./reference:/workspace/reference
+      - ./data/output:/workspace/output
+      - ./data/logs:/workspace/logs
+      - ./data/SoVITS_weights:/workspace/SoVITS_weights
+      - ./data/reference:/workspace/reference
+      - ./data/GPT_weights:/workspace/GPT_weights
     working_dir: /workspace
     ports:
       - "${PANEL_SOVITS_PORT_API}:9880"
