@@ -24,7 +24,7 @@ services:
       - "${PANEL_SOVITS_PORT_2}:9872"
       - "${PANEL_SOVITS_PORT_1}:9873"
       - "${PANEL_APP_PORT_HTTP}:9874"
-    shm_size: ${SHM_SIZE}G
+    shm_size: ${SHM_SIZE}
     #deploy:
     #  resources:
     #    reservations:
