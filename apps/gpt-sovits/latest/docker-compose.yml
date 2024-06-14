@@ -7,8 +7,11 @@ services:
     networks:
       - 1panel-network
     environment:
-      - is_half=False
-      - is_share=False
+        - is_half=False
+        - is_share=False
+        #i18
+        - LANG=zh_CN.UTF-8
+        - LC_ALL=zh_CN.UTF-8
     volumes:
       - ./output:/workspace/output
       - ./logs:/workspace/logs
