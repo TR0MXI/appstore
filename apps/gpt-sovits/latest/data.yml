@@ -1,0 +1,40 @@
+additionalProperties:
+  formFields:
+    - default: 9874
+      edit: true
+      envKey: PANEL_APP_PORT_WEBUI
+      labelEn: WebUI Port
+      labelZh: 网页端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: 9873
+      edit: true
+      envKey: PANEL_APP_PORT_1
+      labelZh: 端口1
+      required: true
+      type: number
+    - default: 9872
+      edit: true
+      envKey: PANEL_APP_PORT_2
+      labelZh: 端口2
+      required: true
+      type: number
+    - default: 9871
+      edit: true
+      envKey: PANEL_APP_PORT_3
+      labelZh: 端口3
+      required: true
+      type: number
+    - default: 9880
+      edit: true
+      envKey: PANEL_APP_PORT_API
+      labelZh: api端口
+      required: true
+      type: number
+    - default: 16
+      edit: true
+      envKey: SHM_SIZE
+      labelZh: 可用内存
+      required: true
+      type: number
