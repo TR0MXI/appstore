@@ -32,9 +32,9 @@ additionalProperties:
       labelZh: api端口
       required: true
       type: number
-    - default: 16
+    - default: 16G
       edit: true
       envKey: SHM_SIZE
       labelZh: 可用内存
       required: true
-      type: number
+      type: text
