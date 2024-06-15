@@ -1,0 +1,19 @@
+name: vits-simple-api
+tags:
+    - ai
+title: 高效的TTS训练推理工具
+description: 高效的TTS训练推理工具
+additionalProperties:
+    key: vits-simple-api
+    name: vits-simple-api
+    tags:
+        - ai
+    shortDescZh: 一个简单的 VITS HTTP API，通过扩展 Moegoe 开发附加功能。
+    shortDescEn: A simple VITS HTTP API, developed by extending Moegoe with additional features.
+    type: ai
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 0
+    website: https://github.com/Artrajz/vits-simple-api
+    github: https://github.com/Artrajz/vits-simple-api
+    document: https://github.com/Artrajz/vits-simple-api

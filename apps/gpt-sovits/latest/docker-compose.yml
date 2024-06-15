@@ -20,18 +20,18 @@ services:
       - ./data/GPT_weights:/workspace/GPT_weights
     working_dir: /workspace
     ports:
-      - "${PANEL_SOVITS_PORT_API}:9880"
-      - "${PANEL_SOVITS_PORT_3}:9871"
-      - "${PANEL_SOVITS_PORT_2}:9872"
-      - "${PANEL_SOVITS_PORT_1}:9873"
-      - "${PANEL_APP_PORT_HTTP}:9874"
+      - ${PANEL_SOVITS_PORT_API}:9880
+      - ${PANEL_SOVITS_PORT_3}:9871
+      - ${PANEL_SOVITS_PORT_2}:9872
+      - ${PANEL_SOVITS_PORT_1}:9873
+      - ${PANEL_APP_PORT_HTTP}:9874
     shm_size: ${SHM_SIZE}
     deploy:
       resources:
         reservations:
           devices:
           - driver: nvidia
-            count: "all"
+            count: all
             capabilities: [gpu]
     labels:
       createdBy: "Apps"

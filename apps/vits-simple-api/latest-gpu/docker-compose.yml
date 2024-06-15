@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  vits:
+    image: artrajz/vits-simple-api:latest-gpu
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:23456
+    environment:
+      LANG: 'C.UTF-8'
+      TZ: Asia/Shanghai #timezone
+    command: [ 'python', 'app.py' ] # 目前用不了gunicorn多进程
+    volumes:
+      - ./data/data:/app/data #挂载模型文件夹
+#      - ./config.py:/app/config.py # 挂载配置文件
+      - ./data/config.yaml:/app/config.yaml # 挂载配置文件
+      - ./data/logs:/app/logs # logging logs
+      - ./data/gunicorn_config.py:/app/gunicorn_config.py # gunicorn configuration
+      - ./data/pyopenjtalk/open_jtalk_dic_utf_8-1.11:/usr/local/lib/python3.10/site-packages/pyopenjtalk/open_jtalk_dic_utf_8-1.11 #pyopentjalk
+      - ./data/nltk_data:/usr/local/share/nltk_data
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              #device_ids: ['0', '3']
+              capabilities: [ gpu ]
