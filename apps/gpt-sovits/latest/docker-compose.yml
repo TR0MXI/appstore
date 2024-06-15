@@ -26,16 +26,16 @@ services:
       - "${PANEL_SOVITS_PORT_1}:9873"
       - "${PANEL_APP_PORT_HTTP}:9874"
     shm_size: ${SHM_SIZE}
-    #deploy:
-    #  resources:
-    #    reservations:
-    #      devices:
-    #      - driver: nvidia
-    #        count: "all"
-    #        capabilities: [gpu]
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - driver: nvidia
+            count: "all"
+            capabilities: [gpu]
     labels:
       createdBy: "Apps"
-    runtime: nvidia
+    #runtime: nvidia
     stdin_open: true
     tty: true
     restart: always
