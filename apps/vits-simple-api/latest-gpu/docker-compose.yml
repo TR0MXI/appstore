@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   vits:
     image: artrajz/vits-simple-api:latest-gpu
