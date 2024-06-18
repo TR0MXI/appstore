@@ -1,7 +1,7 @@
 services:
   meme-generator:
     image: ghcr.io/meetwq/meme-generator:main
-    container_name: meme-generator
+    container_name: ${CONTAINER_NAME}
     restart: always
     ports:
       - ${PANEL_APP_PORT_HTTP}:2233
