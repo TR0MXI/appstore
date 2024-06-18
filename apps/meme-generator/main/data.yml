@@ -1,0 +1,24 @@
+additionalProperties:
+  formFields:
+    - default: 2233
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: API Port
+      labelZh: API端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: BAIDU_TRANS_APPID
+      edit: true
+      envKey: BAIDU_TRANS_APPID
+      labelEn: BAIDU_TRANS_APPID
+      labelZh: 百度翻译api ID
+      required: false
+      type: text
+    - default: BAIDU_TRANS_APIKEY
+      edit: true
+      envKey: BAIDU_TRANS_APIKEY
+      labelEn: BAIDU_TRANS_APIKEY
+      labelZh: 百度翻译api key
+      required: false
+      type: text

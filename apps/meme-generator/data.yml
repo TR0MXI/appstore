@@ -1,0 +1,18 @@
+name: meme-generator
+tags:
+    - 实用工具
+title: ✨ 表情包生成器，用于制作各种沙雕表情包 ✨
+description: ✨ 表情包生成器，用于制作各种沙雕表情包 ✨
+additionalProperties:
+    key: meme-generator
+    name: meme-generator
+    tags:
+        - Tool
+    shortDescZh: ✨ 表情包生成器，用于制作各种沙雕表情包 ✨
+    type: tool
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 0
+    website: https://github.com/MeetWq/meme-generator
+    github: https://github.com/MeetWq/meme-generator
+    document: https://github.com/MeetWq/meme-generator
