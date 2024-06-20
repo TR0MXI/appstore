@@ -1,0 +1,15 @@
+services:
+  sing-box:
+    image: gzxhwq/sing-box:client
+    container_name: ${CONTAINER_NAME}
+
+    restart: unless-stopped
+
+    network_mode: "host"
+
+    volumes:
+      - ./data:/etc/sing-box/
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - /dev/net/tun
