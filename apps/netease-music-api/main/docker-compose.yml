@@ -1,0 +1,13 @@
+services:
+  meme-generator:
+    image: netease-music-api:latest
+    container_name: ${CONTAINER_NAME}
+    networks:
+      - 1panel-network
+    restart: always
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:3000
+
+networks:
+  1panel-network:
+    external: true
