@@ -7,8 +7,6 @@ services:
     restart: always
     ports:
       - ${PANEL_APP_PORT_HTTP}:3000
-    volumes:
-      - ./data:/app
 
 networks:
   1panel-network:
