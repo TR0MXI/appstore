@@ -1,0 +1,8 @@
+services:
+  openwrt:  # 定义一个名为 openwrt 的服务
+    image: zzsrv/openwrt  # 使用 zzsrv/openwrt 镜像
+    container_name: openwrt  # 设置容器名称为 openwrt
+    restart: always  # 配置容器始终重启
+    network_mode: "host"  # 使用 "host" 网络模式，直接使用宿主机的网络
+    privileged: true  # 授予容器特权访问权限
+    command: /sbin/init  # 覆盖默认命令，运行 /sbin/init 启动 OpenWrt

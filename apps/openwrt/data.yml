@@ -1,0 +1,19 @@
+name: openwrt
+tags:
+    - 实用工具
+title: OpenWrt-23.05 (PassWall & OpenClash)
+description: OpenWrt-23.05 (PassWall & OpenClash)
+additionalProperties:
+    key: openwrt
+    name: openwrt
+    tags:
+        - Tool
+    shortDescZh: OpenWrt-23.05 (PassWall & OpenClash)
+    shortDescEn: OpenWrt-23.05 (PassWall & OpenClash)
+    type: tool
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 0
+    website: https://github.com/immortalwrt/immortalwrt/tree/openwrt-23.05
+    github: https://github.com/immortalwrt/immortalwrt/tree/openwrt-23.05
+    document: https://github.com/zzsrv/OpenWrt-Docker
