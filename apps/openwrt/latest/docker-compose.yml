@@ -4,10 +4,10 @@ services:
     container_name: openwrt
     restart: always
     networks: 
-      - macnet # 使用已有的macnet网络
+      - 1panel-network
     privileged: true
     command: /sbin/init
 
 networks:
-  macnet: 
-    external: true # 指定macnet为外部网络
+  1panel-network:
+    external: true
