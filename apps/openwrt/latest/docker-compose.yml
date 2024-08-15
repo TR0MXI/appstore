@@ -3,7 +3,6 @@ services:
     image: zzsrv/openwrt
     container_name: openwrt
     restart: always
-    network_mode: "bridged" # 使用桥接网络模式
     networks: 
       - macnet # 使用已有的macnet网络
     privileged: true
