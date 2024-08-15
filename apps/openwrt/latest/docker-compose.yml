@@ -10,4 +10,5 @@ services:
 
 networks:
   macnet: 
+    ipv4_address: 192.168.0.2
     external: true # 指定macnet为外部网络
