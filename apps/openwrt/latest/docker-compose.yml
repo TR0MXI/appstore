@@ -6,12 +6,12 @@ services:
     container_name: openwrt
     restart: always
     networks: 
-      1panel-network:
+      ovs_lan:
         ipv4_address: 192.168.10.2
     privileged: true
     command: /sbin/init
     ports:
       - ${PANEL_APP_PORT_HTTP}:80
 networks:
-  1panel-network:
+  ovs_lan:
     external: true
