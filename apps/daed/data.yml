@@ -1,0 +1,19 @@
+name: daed
+tags:
+    - 实用工具
+title: daed, a modern dashboard with dae.
+description: daed, a modern dashboard with dae.
+additionalProperties:
+    key: daed
+    name: daed
+    tags:
+        - Tool
+    shortDescZh: daed, a modern dashboard with dae.
+    shortDescEn: daed, a modern dashboard with dae.
+    type: tool
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 0
+    website: https://github.com/daeuniverse/daed
+    github: https://github.com/daeuniverse/daed
+    document: https://github.com/daeuniverse/daed
