@@ -7,5 +7,5 @@ services:
     network_mode: host
     pid: host
     volumes:
-      - /sys:/sys:ro
-      - /etc/daed:/etc/daed:ro
+      - /sys:/sys
+      - /etc/daed:/etc/daed
