@@ -1,14 +1,14 @@
 name: daed
 tags:
     - 实用工具
-title: daed, a modern dashboard with dae.
-description: daed, a modern dashboard with dae.
+title: DAED，带有 DAE 的现代仪表板。
+description: DAED，带有 DAE 的现代仪表板。
 additionalProperties:
     key: daed
     name: daed
     tags:
         - Tool
-    shortDescZh: daed, a modern dashboard with dae.
+    shortDescZh: DAED，带有 DAE 的现代仪表板。
     shortDescEn: daed, a modern dashboard with dae.
     type: tool
     crossVersionUpdate: true
