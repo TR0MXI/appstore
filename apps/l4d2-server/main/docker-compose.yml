@@ -4,11 +4,11 @@ services:
     container_name: l4d2-server
     restart: unless-stopped
     network_mode: host
-    pid: host
     volumes:
-      - ./data/addons:/home/steam/Steam/steamapps/common/Left 4 Dead 2 Dedicated Server/left4dead2/addons
-      - ./data/cfg:/home/steam/Steam/steamapps/common/Left 4 Dead 2 Dedicated Server/left4dead2/cfg
-      - ./data/motd.txt:/home/steam/Steam/steamapps/common/Left 4 Dead 2 Dedicated Server/left4dead2/motd.txt
-      - ./data/host.txt:/home/steam/Steam/steamapps/common/Left 4 Dead 2 Dedicated Server/left4dead2/host.txt
-      - ./data/start.sh:/home/steam/Steam/steamapps/common/Left 4 Dead 2 Dedicated Server/left4dead2/start.sh
-    command: ["./start.sh"]
+      - addons:/home/steam/l4d2server/left4dead2/addons:rw
+      - cfg:/home/steam/l4d2server/left4dead2/cfg:rw
+      - ./data/host.txt:/home/steam/l4d2server/left4dead2/host.txt
+      - ./data/motd.txt:/home/steam/l4d2server/left4dead2/motd.txt
+volumes:
+    addons: null
+    cfg: null
