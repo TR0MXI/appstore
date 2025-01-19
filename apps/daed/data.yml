@@ -12,7 +12,7 @@ additionalProperties:
     shortDescEn: daed, a modern dashboard with dae.
     type: tool
     crossVersionUpdate: true
-    limit: 0
+    limit: 1
     recommend: 0
     website: https://github.com/daeuniverse/daed
     github: https://github.com/daeuniverse/daed

@@ -1,0 +1,18 @@
+name: l4d2-server
+tags:
+    - 实用工具
+title: l4d2 server
+description: 基于CM2Walki/steamcmd的l4d2 server
+additionalProperties:
+    key: l4d2-server
+    name: l4d2-server
+    tags:
+        - Tool
+    shortDescZh: 基于CM2Walki/steamcmd的l4d2 server
+    type: tool
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 0
+    website: https://github.com/CM2Walki/steamcmd?tab=readme-ov-file
+    github: https://github.com/CM2Walki/steamcmd?tab=readme-ov-file
+    document: https://github.com/CM2Walki/steamcmd?tab=readme-ov-file
