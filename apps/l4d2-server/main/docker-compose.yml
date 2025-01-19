@@ -17,7 +17,27 @@ services:
       - ./data/run.sh:/home/steam/l4d2server/run.sh
 
 volumes:
-    scripts: null
-    addons: null
-    cfg: null
-    ems: null
+    scripts:
+      driver: local
+      driver_opts:
+        o: bind
+        type: none
+        device: ./data/scripts
+    addons:
+      driver: local
+      driver_opts:
+        o: bind
+        type: none
+        device: ./data/addons
+    cfg:
+      driver: local
+      driver_opts:
+        o: bind
+        type: none
+        device: ./data/cfg
+    ems:
+      driver: local
+      driver_opts:
+        o: bind
+        type: none
+        device: ./data/ems
