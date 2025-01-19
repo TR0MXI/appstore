@@ -7,8 +7,7 @@ services:
     volumes:
       - addons:/home/steam/l4d2server/left4dead2/addons:rw
       - cfg:/home/steam/l4d2server/left4dead2/cfg:rw
-      - ./data/host.txt:/home/steam/l4d2server/left4dead2/host.txt
-      - ./data/motd.txt:/home/steam/l4d2server/left4dead2/motd.txt
+
 volumes:
     addons: null
     cfg: null
