@@ -4,11 +4,14 @@ services:
     container_name: l4d2-server
     restart: unless-stopped
     network_mode: host
+    environment:
+      - SERVERPORT=${PANEL_APP_PORT_HTTP}
     volumes:
       - addons:/home/steam/l4d2server/left4dead2/addons
       - cfg:/home/steam/l4d2server/left4dead2/cfg
       - ./data/motd.txt:/home/steam/l4d2server/left4dead2/motd.txt
       - ./data/host.txt:/home/steam/l4d2server/left4dead2/host.txt
+      - ./data/run.sh:/home/steam/l4d2server/run.sh
 
 volumes:
     addons: null
