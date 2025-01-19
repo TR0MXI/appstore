@@ -11,4 +11,4 @@ services:
       - ./data/motd.txt:/home/steam/Steam/steamapps/common/Left 4 Dead 2 Dedicated Server/left4dead2/motd.txt
       - ./data/host.txt:/home/steam/Steam/steamapps/common/Left 4 Dead 2 Dedicated Server/left4dead2/host.txt
       - ./data/start.sh:/home/steam/Steam/steamapps/common/Left 4 Dead 2 Dedicated Server/left4dead2/start.sh
-    comand: ["./start.sh"]
+    command: ["./start.sh"]
