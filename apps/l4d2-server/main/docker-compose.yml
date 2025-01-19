@@ -6,13 +6,18 @@ services:
     network_mode: host
     environment:
       - SERVERPORT=${PANEL_APP_PORT_HTTP}
+    user: steam
     volumes:
+      - scripts:/home/steam/l4d2server/left4dead2/scripts
       - addons:/home/steam/l4d2server/left4dead2/addons
       - cfg:/home/steam/l4d2server/left4dead2/cfg
+      - ems:/home/steam/l4d2server/left4dead2/ems
       - ./data/motd.txt:/home/steam/l4d2server/left4dead2/motd.txt
       - ./data/host.txt:/home/steam/l4d2server/left4dead2/host.txt
       - ./data/run.sh:/home/steam/l4d2server/run.sh
 
 volumes:
+    scripts: null
     addons: null
     cfg: null
+    ems: null
