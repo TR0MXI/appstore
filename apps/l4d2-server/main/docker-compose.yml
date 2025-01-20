@@ -1,7 +1,6 @@
 services:
   l4d2-server:
     image: l4d2-server:latest
-    container_name: l4d2-server
     restart: unless-stopped
     network_mode: host
     labels:  
