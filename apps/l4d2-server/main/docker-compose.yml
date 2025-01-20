@@ -4,6 +4,8 @@ services:
     container_name: l4d2-server
     restart: unless-stopped
     network_mode: host
+    labels:  
+      createdBy: "Apps"
     environment:
       - SERVERPORT=${PANEL_APP_PORT_HTTP}
     user: steam
