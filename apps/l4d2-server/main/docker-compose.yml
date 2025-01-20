@@ -2,6 +2,7 @@ services:
   l4d2-server:
     image: l4d2-server:latest
     restart: unless-stopped
+    container_name: ${CONTAINER_NAME}
     network_mode: host
     labels:  
       createdBy: "Apps"
