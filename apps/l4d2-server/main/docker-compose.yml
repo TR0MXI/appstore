@@ -16,7 +16,7 @@ services:
       - ems:/home/steam/l4d2server/left4dead2/ems
       - ./data/motd.txt:/home/steam/l4d2server/left4dead2/motd.txt
       - ./data/host.txt:/home/steam/l4d2server/left4dead2/host.txt
-      - ./data/run.sh:/home/steam/l4d2server/run.sh
+      - ./data/run.txt:/home/steam/l4d2server/run.txt
 
 volumes:
     scripts:
